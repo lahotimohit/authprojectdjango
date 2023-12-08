@@ -1,0 +1,14 @@
+{% extends "hospital/base.html" %} {% block content %}
+<p align="center">
+  <img src="{{ user.profile_photo }}" width="500px" height="300px" /><br />
+  Username: {{ user.username}}<br />
+  First Name: {{ user.first_name}}<br />
+  Last Name: {{ user.last_name}}<br />
+  Email: {{ user.email}}<br />
+  Address: {{ user.address_line1}}<br />
+  State: {{ user.state}}<br />
+  City: {{ user.city}}<br />
+  Pincode: {{ user.pincode}}<br />
+  <a href="accounts/logout/">LogOut</a>
+</p>
+{% endblock content %}
